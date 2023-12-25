@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    padding: 5px;
+    background-color: #232323; /* Alterado para escuro */
+    color: #fff; /* Cor do texto ajustada para branco */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Escuro para manter o contraste */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #61dafb;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+}
+
+input {
+    width: 40%; /* Alterado para ocupar toda a largura disponível */
+    padding: 9px; /* Aumentado o padding para melhor legibilidade */
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do input */
+}
+
+.Bia {
+    display: inline-block;
+    background-color: #61dafb;
+    color: #fff;
+    padding: 3px 9px; /* Ajuste o tamanho dos botões conforme necessário */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px; /* Ajuste o tamanho da fonte dos botões conforme necessário */
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.Bia:hover{
+    background-color: #4fa3d1;
+}
+
+.i {
+    color: #61dafb;
+}
+
+.icon{
+    color: #61dafb;
+}
+.fas fa-arrow-left icon {
+    color: #61dafb;
+
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #61dafb;
+    color: #fff;
+    padding: 3px 9px; /* Ajuste o tamanho dos botões conforme necessário */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px; /* Ajuste o tamanho da fonte dos botões conforme necessário */
+    margin: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+.button:hover {
+    background-color: #4fa3d1;
+}
+
+
+/* Estilo para os ícones */
+.icon {
+    font-size: 20px;
+    margin-right: 5px;
+}

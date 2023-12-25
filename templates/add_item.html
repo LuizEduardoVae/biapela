@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='add-item-style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Item</title>
+</head>
+<body>
+    <h1>Adicionar Item à Lista "{{ list_name }}"</h1>
+    <form method="post" action="{{ url_for('add_item', username=username, list_name=list_name) }}">
+        <label for="item_name">Nome do Item:</label>
+        <input type="text" name="item_name" required>
+        <br>
+        <button class="Bia" type="submit">Adicionar Item</button>
+    </form>
+    <p><a href="{{ url_for('list_detail', username=username, list_name=list_name) }}"><i class="fas fa-arrow-left icon"></i></a></p>
+
+</body>
+</html>

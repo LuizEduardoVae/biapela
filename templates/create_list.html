@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='create_list-style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Lista</title>
+</head>
+<body>
+    <h1>Criar Nova Lista</h1>
+    <form method="post" action="{{ url_for('create_list', username=username) }}">
+        <label for="list_name">Nome da Lista:</label>
+        <input type="text" name="list_name" required>
+        <br>
+        <button class="Bia" type="submit">Criar Lista</button>
+    </form>
+    <p><a href="{{ url_for('dashboard', username=username) }}"><i class="fas fa-arrow-left icon"></i></a></p>
+</body>
+</html>

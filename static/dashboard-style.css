@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #232323; /* Alterado para escuro */
+    color: #fff; /* Cor do texto ajustada para branco */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Escuro para manter o contraste */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #61dafb;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.Geral {
+    font-size: 20px;
+    margin-bottom: 15px; /* Ajustado o espaçamento entre os itens da lista */
+    border: 5px solid #61dafb; /* Adicionado contorno azul em torno de cada lista */
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden; /* Adicionado overflow para garantir que a borda seja visível */
+    
+}
+
+
+
+.Nome {
+    font-size: 30px; /* Ajuste o tamanho do nome da lista conforme necessário */
+    display: block; /* Para que o estilo de fonte se aplique corretamente */
+    margin-bottom: 10px; /* Ajuste o espaçamento conforme necessário */
+}
+
+a {
+    text-decoration: none;
+    color: #61dafb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste nos botões */
+.button {
+    display: inline-block;
+    background-color: #61dafb;
+    color: #fff;
+    padding: 3px 9px; /* Ajuste o tamanho dos botões conforme necessário */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px; /* Ajuste o tamanho da fonte dos botões conforme necessário */
+    margin: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4fa3d1;
+}
+
+
+
+/* Estilo para o formulário de criação de lista */
+.form-create-list {
+    display: flex;
+    gap: 10px;
+}
+
+.form-create-list input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-create-list button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 5px; /* Ajustado o tamanho dos botões */
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilo para os ícones */
+.icon {
+    font-size: 15px; /* Ajustado o tamanho dos ícones */
+    margin-right: 5px;
+}

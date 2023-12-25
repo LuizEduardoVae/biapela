@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - {{ username }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard-style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Inclua a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo, {{ username }}!</h1>
+        </header>
+        
+        <section>
+            <h2>Suas Listas:</h2>
+            <ul>
+                {% for list_name, items in lists.items() %}
+                    <li class="Geral">
+                        <strong class="Nome">{{ list_name }}</strong>
+                        <ul>
+                            {% for item in items %}
+                                <li class="Item">{{ item }} <a href="{{ url_for('remove_item', username=username, list_name=list_name, item_name=item) }}"><i class="fas fa-minus-circle icon"></i></a></li>
+                            {% endfor %}
+                        </ul>
+                        
+                        
+                        <!-- Botões com ícones -->
+                        <a class="button" href="{{ url_for('add_item', username=username, list_name=list_name) }}"><i class="fas fa-plus-circle icon"></i> Adicionar Item</a>
+                        <a class="button" href="{{ url_for('list_detail', username=username, list_name=list_name) }}"><i class="fas fa-list-ul icon"></i> Ver Detalhes</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+            <!-- Botão para criar nova lista -->
+            <a class="button" href="{{ url_for('create_list', username=username) }}"><i class="fas fa-plus-circle icon"></i> Criar Nova Lista</a>
+            
+            <!-- Botão para fazer logout -->
+            <a class="button" href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt icon"></i> Logout</a>
+        </section>
+    </div>
+</body>
+</html>

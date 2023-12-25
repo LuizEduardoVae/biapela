@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='index-style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index-style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='Logo.JPG') }}" alt="Logo">
+
+        </div>
+        <h1>Lista App</h1>
+        <div class="button-container">
+            <a class="button" href="{{ url_for('login') }}">Login</a>
+            <a class="button" href="{{ url_for('signup') }}">Criar Conta</a>
+        </div>
+    </div>
+</body>
+</html>

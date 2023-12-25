@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 9px;
+    padding: 0;
+    background-color: #232323; /* Alterado para escuro */
+    color: #fff; /* Cor do texto ajustada para branco */
+}
+
+h1 {
+    color: #61dafb;
+    text-align: center;
+}
+
+.i {
+    color: #61dafb;
+}
+
+.LUIZ{
+    display: inline-block;
+    background-color: #61dafb;
+    color: #fff;
+    padding: 3px 9px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.LUIZ:hover{
+    background-color: #4fa3d1;
+}
+
+.icon{
+    color: #61dafb;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px; /* Ajustado o espaçamento entre os itens da lista */
+}
+
+a {
+    text-decoration: none;
+    color: #61dafb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste nos botões */
+.button {
+    display: inline-block;
+    background-color: #61dafb;
+    color: #fff;
+    padding: 12px 20px; /* Ajustado o tamanho dos botões */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4fa3d1;
+}
